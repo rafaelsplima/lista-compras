@@ -24,5 +24,9 @@ export class ItemComponent implements OnInit, OnChanges {
     this.emitindoItemParaEditar.emit(this.item);
   }
 
+  checkItem() {
+    this.item.comprado = !this.item.comprado
+  }
+
 
 }
